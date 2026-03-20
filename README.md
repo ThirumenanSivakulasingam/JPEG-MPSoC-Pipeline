@@ -26,7 +26,7 @@ This version of the project is cleaned for sharing. It keeps the source files, o
 ## What Is Included
 
 - One sample input image:
-  - `31efd31abdd6e37cc05a8376ca9a55be.jpg`
+  - `input.jpg`
 - One sample output image:
   - `software/generated/output.jpg`
 
@@ -57,7 +57,7 @@ The runner script expects the current hardware outputs to exist when you execute
 From the `software` folder, run:
 
 ```bash
-IMAGE_INPUT=../31efd31abdd6e37cc05a8376ca9a55be.jpg bash run_jpeg.sh
+IMAGE_INPUT=../input.jpg bash run_jpeg.sh
 ```
 
 This script will:
@@ -76,7 +76,7 @@ This script will:
 To test the custom DCT path:
 
 ```bash
-IMAGE_INPUT=../31efd31abdd6e37cc05a8376ca9a55be.jpg CPU2_USE_CUSTOM_DCT=1 bash run_jpeg.sh
+IMAGE_INPUT=../input.jpg CPU2_USE_CUSTOM_DCT=1 bash run_jpeg.sh
 ```
 
 In the CPU2 log, look for:
